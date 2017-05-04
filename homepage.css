@@ -1,5 +1,9 @@
-body {
-  margin: 0 auto;
+/* Media screen for different browsers*/
+
+@media screen and (min-width: 500px) {
+   body {
+      width:100%;
+      margin: 0 auto;
 }
 
 a {
@@ -7,39 +11,82 @@ a {
 }
 
 .bgimgBox img {
+  height: 600px;
+  display: inline-block;
   width:100%;
-    height:100%;
+}
 
+.info {
+  position: absolute;
+  float: left;
+  margin-top: -45%;
+  margin-left: 5%;
+  height: 25%;
+  width: 30%;
+  z-index: 1;
+}
+
+.subinfo {
+
+  font-family: 'Amatic SC', cursive;
+  filter: opacity(90%);
+  font-weight: 100;
+  font-size: 70px;
+  color: white;
 }
 
 /*logo container and logo styles*/
 .logoBox {
-  margin-top: -65%;
-  margin-left: 2%;
+  display: inline-block;
+  margin-right: 9%;
+
+
+
 }
 
 .logo {
+margin-bottom: -155px;
 border: 8px solid black;
 border-radius: 30px;
-filter: opacity(66%);
+filter: opacity(90%);
 }
 /*Container and hover over dropdown inline nav */
-.listbox {
+.menulogobox {
+  margin-left: 3%;
+  height: 100px;
+  display: block;
+  width: 97%;
+
+}
+
+.listbox1 {
+  float: left;
+  margin-left: 1%;
+  margin-right: 10%;
+  display: inline-block;
+
+
+}
+/* Added listbox2 to place logo in the middle of the two lists */
+.listbox2 {
+
   float: right;
-  margin-top: -244px;
-  margin-right: 13%;
+  position:absolute;
+  display: inline-block;
+  margin-left: 10px;
+
 }
 
 .dropbtn {
     height: 10px;
-    color: white;
-    padding: 30px;
+    color: black;
+    padding: 15px;
     font-size: 35px;
     border: none;
     cursor: pointer;
     margin-right: 30px;
     font-family: 'Amatic SC', cursive;
-    filter: opacity(70%);
+    filter: opacity(90%);
     font-weight: 100;
 }
 
@@ -50,7 +97,6 @@ filter: opacity(66%);
 }
 
 .dropdown-content {
-
     width: 100px;
     margin-left: 25px;
     display: none;
@@ -60,7 +106,6 @@ filter: opacity(66%);
 }
 
 .dropdown-content a {
-
     margin-left: 4px;
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
@@ -83,4 +128,13 @@ filter: opacity(66%);
 
 .dropdown:hover .dropbtn {
 
+}
+
+
+.location {
+  text-align: center;
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  font-family: 'Amatic SC', cursive;
 }
